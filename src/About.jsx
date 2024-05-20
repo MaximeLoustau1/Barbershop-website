@@ -5,6 +5,7 @@ import image from "./assets/about-image.jpeg";
 function About() {
   return (
     <section id="about-section">
+      <div className="background-img"></div>
       <div className="about-card">
         <h1 className="about-title">Barbershop Just For Men</h1>
         <p className="about-description">
@@ -13,10 +14,6 @@ function About() {
         </p>
         <Button class="btn large-btn" text="Book Now"/>
         <Button class="btn secondary-btn" text="Prices" />
-      </div>
-      
-      <div className="about-image">
-        <img src={image} alt="hipster barber"/>
       </div>
     </section>
   );
