@@ -67,6 +67,16 @@ h1 {
     color: #fefeff;
 }
 
+@media (min-width: 1300px) {
+    #about-section {
+        height: 65vh;
+        margin-bottom: 0;
+    }
+    .about-card {
+        margin-top: 17%!important;
+    }
+}
+
 @media (max-width: 847px) {
     .background-img {
         height: 150vh;
