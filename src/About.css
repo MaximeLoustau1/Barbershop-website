@@ -82,6 +82,7 @@ h1 {
 
     #about-section {
         height: 70vh;
+        margin: 0;
     }
 
     .about-card {
@@ -107,6 +108,10 @@ h1 {
 @media (max-width: 600px) {
     .about-card {
         margin-top: 30%!important;
+    }
+
+    #about-section {
+        height: 81vh;
     }
 }
 

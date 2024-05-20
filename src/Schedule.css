@@ -128,7 +128,7 @@
 @media (max-width: 450px) {
     .barber-schedule {
         width: 80%;
-        padding-left: 0px;
+        padding-left: 15px;
     }
 
     .map {
