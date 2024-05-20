@@ -72,6 +72,15 @@
 @media (max-width: 663px) {
     .services-container > * {
         width: calc(100% - 24px); 
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #services-section {
+        padding-bottom: 90px;
+    }
+
+    #services-section > h1 {
+        font-size: 2rem;
     }
 }
 
