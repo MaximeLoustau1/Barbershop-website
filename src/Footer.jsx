@@ -8,7 +8,7 @@ function Footer() {
 	return (
 		<section>
 			<div className="footer">
-				<p>&copy; {currentYear} Barbershopjustformen / All rights reserved</p>
+				<p>&copy; {currentYear} TNM.consulting / All rights reserved</p>
 			</div>
 		</section>
 	);

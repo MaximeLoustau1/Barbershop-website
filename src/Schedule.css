@@ -132,7 +132,7 @@
     }
 
     .map {
-        width: calc(80% + 10px);
+        width: calc(80% + 25px);
         margin: auto;
     }
 
