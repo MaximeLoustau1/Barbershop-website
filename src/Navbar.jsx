@@ -27,8 +27,8 @@ function Navbar() {
             <div className={isMenuOpen ? 'show navbar-container' : 'navbar-container'}>
                 <div className="navbar-menu">
                     <div className="navbar-menu-item" onClick={hideSideBar}><a href='#about-section'>About</a></div>
-                    <div className="navbar-menu-item prices-item" onClick={hideSideBar}><a href='#services-section'>Prices</a></div>
-                    <div className="navbar-menu-item" onClick={hideSideBar}><a href='#team-section'>Team</a></div>
+                    <div className="navbar-menu-item prices-item" onClick={hideSideBar}><a href='#team-section'>Team</a></div>
+                    <div className="navbar-menu-item" onClick={hideSideBar}><a href='#services-section'>Prices</a></div>
                     <div className="navbar-menu-item" onClick={hideSideBar}><a href='#schedule-section'>Contact</a></div>
                 </div>
 
