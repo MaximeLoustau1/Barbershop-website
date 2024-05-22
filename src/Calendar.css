@@ -17,6 +17,8 @@
 @media (max-width: 663px) {
     .calendar-title {
         font-size: 2rem;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
