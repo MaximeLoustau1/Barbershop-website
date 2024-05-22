@@ -14,8 +14,8 @@ function About() {
           Amstelveen's go-to for expert grooming. With over 40 years of combined
           experience, our team ensures precision cuts and personalized service.
         </p>
-        <Button class="btn large-btn" text="Book Now"/>
-        <Button class="btn secondary-btn" text="Prices" />
+        <Button link="#calendar" class="btn-about large-btn" text="Book Now"/>
+        <Button link="#services-section" class="btn-about secondary-btn" text="Prices" />
       </div>
     </section>
   );

@@ -42,7 +42,17 @@ body {
     padding-right: 30px;
 }
 
+.btn-about {
+    color: #362b27;
+    font-weight: bolder;
+    font-size: 1.2em;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+}
+
 .large-btn {
+    background: #fefeff;
     padding: 10px 20px;
     margin-right: 15px;
 }
@@ -53,6 +63,13 @@ body {
     padding: 9px 19px;
     color: #fefeff;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}  
 
 @media (min-width: 1400px) {
     .about-card {

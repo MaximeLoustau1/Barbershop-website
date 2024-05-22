@@ -33,7 +33,7 @@ function Navbar() {
                 </div>
 
                 <div className="navbar-cta">
-                    <Button class="btn small-btn" text="Book Now"/>
+                    <Button link="#calendar" class="btn small-btn" text="Book Now"/>
                     <Toggle />
                 </div>
             </div>
