@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
+import pic from './assets/background-img1.jpg'
 import './Calendar.css'
 
-const CalendlyWidget = () => {
+const Calendar = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
     document.body.appendChild(script);
     
-    // Clean up the script when the component unmounts
     return () => {
       document.body.removeChild(script);
     };
@@ -16,12 +16,17 @@ const CalendlyWidget = () => {
 
   return (
     <section id="calendar">
+      <h1 className="calendar-title">Schedule your booking</h1>
+      <div className="calendar-container">
+        <img className="barbershop-img" src={pic} alt="image of barbershop" />
         <div
-        className="calendly-inline-widget"
-        data-url="https://calendly.com/rohandemerde/haircut?text_color=362b27&primary_color=9a7b5f"
+          className="calendly-inline-widget"
+          data-url="https://calendly.com/rohandemerde/haircut?hide_event_type_details=1&hide_gdpr_banner=1&background_color=9a7b5f&text_color=ffffff&primary_color=ffffff"
+          style={{ minWidth: '320px' }}
         ></div>
+      </div>
     </section>
   );
-};
+}
 
-export default CalendlyWidget;
+export default Calendar;

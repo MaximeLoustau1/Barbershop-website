@@ -9,8 +9,8 @@
 .schedule-container {
     display: flex;
     justify-content: center;
-    gap: 5%;
-    padding: 0 100px 90px 100px;
+    gap: 55px;
+    padding: 0 100px 50px 100px;
 }
 
 .map > iframe{
@@ -22,13 +22,13 @@
 .map {
     border: 5px solid #9a7b5f;
     border-radius: 7px;
-    width: 600px;
+    width: 550px;
     height: 490.93px;
 }
 
 .barber-schedule {
     letter-spacing: 1.3px;
-    width: 30%;
+    width: 320px;
     background-color: #9a7b5f;
     padding: 20px;
     border-radius: 7px;
@@ -103,25 +103,39 @@
 }
 
 @media (max-width: 824px) {
+    #schedule-section {
+        margin-top: 40px;
+    }
     .schedule-container {
         flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 100%;
         gap: 40px;
         padding: 0;
     }
     
     .barber-schedule {
-        width: 70%;
-        margin: auto;
+        width: calc(65% - 10px);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .map {
-        width: calc(70% + 30px);
+        width: calc(70% - 10px);
         margin: auto;
     }
+
     .schedules {
         gap: 15%;
         justify-content: flex-start;
         padding-left: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .barber-schedule {
+        width: calc(65% - 15px);
     }
 }
 
