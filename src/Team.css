@@ -185,20 +185,14 @@ hr {
 
 @media (max-width: 950px) {
     .review-caroussel {
-        animation: 40s slide infinite linear;
-    }
-    .card-overlay {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 950px) {
-    .review-caroussel {
         animation: 45s slide infinite linear;
     }
     .reviews:before,
     .reviews:after {
         width: 100px;
+    }
+    .card-overlay {
+        opacity: 1;
     }
 }
 
