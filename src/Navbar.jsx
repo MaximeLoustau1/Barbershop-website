@@ -3,7 +3,7 @@ import Button from './Button'
 import Toggle from './Toggle'
 import './Navbar.css'
 
-function Navbar() {
+function Navbar({language, setLanguage}) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleMenuClick = () => {
@@ -26,15 +26,15 @@ function Navbar() {
             </div>
             <div className={isMenuOpen ? 'show navbar-container' : 'navbar-container'}>
                 <div className="navbar-menu">
-                    <div className="navbar-menu-item" onClick={hideSideBar}><a href='#about-section'>About</a></div>
+                    <div className="navbar-menu-item" onClick={hideSideBar}><a href='#about-section'>{language === 'EN' ? "About" : "Over Ons"}</a></div>
                     <div className="navbar-menu-item prices-item" onClick={hideSideBar}><a href='#team-section'>Team</a></div>
-                    <div className="navbar-menu-item" onClick={hideSideBar}><a href='#services-section'>Prices</a></div>
+                    <div className="navbar-menu-item" onClick={hideSideBar}><a href='#services-section'>{language === 'EN' ? "Prices" : "Prijzen"}</a></div>
                     <div className="navbar-menu-item" onClick={hideSideBar}><a href='#schedule-section'>Contact</a></div>
                 </div>
 
                 <div className="navbar-cta">
-                    <Button link="#calendar" class="btn small-btn" text="Book Now"/>
-                    <Toggle />
+                    <Button link="#calendar" class="btn small-btn" text={language === 'EN' ? "Book Now" : "Boek nu"}/>
+                    <Toggle language={language} setLanguage={setLanguage}/>
                 </div>
             </div>
             

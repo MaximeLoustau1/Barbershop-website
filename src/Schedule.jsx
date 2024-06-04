@@ -5,24 +5,24 @@ import email from './assets/email-icon.svg'
 import pin from './assets/pin-icon.svg'
 import './Schedule.css'
 
-function Schedule() {
+function Schedule({language}) {
     return (
         <section id="schedule-section">
             <div className="schedule-container">
                 <div className="barber-schedule">
-                    <h2 className="schedule-title">Contact Us</h2>
+                    <h2 className="schedule-title">{language === 'EN' ? "Contact Us" : "Neem contact op"}</h2>
                     <div className="schedules">
                         <div className="schedule-days">
-                            <p>Mon</p>
-                            <p>Tue</p>
-                            <p>Wed</p>
-                            <p>Thu</p>
-                            <p>Fri</p>
-                            <p>Sat</p>
-                            <p>Sun</p>
+                            <p>{language === 'EN' ? "Mon" : "Maa"}</p>
+                            <p>{language === 'EN' ? "Tue" : "Din"}</p>
+                            <p>{language === 'EN' ? "Wed" : "Woe"}</p>
+                            <p>{language === 'EN' ? "Thu" : "Don"}</p>
+                            <p>{language === 'EN' ? "Fri" : "Vri"}</p>
+                            <p>{language === 'EN' ? "Sat" : "Zat"}</p>
+                            <p>{language === 'EN' ? "Sun" : "Zon"}</p>
                         </div>
                         <div className="schedule-hours">
-                            <p>CLOSED</p>
+                            <p>{language === 'EN' ? "CLOSED" : "GESLOTEN"}</p>
                             <p>8:30am to 5:30pm</p>
                             <p>8:30am to 5:30pm</p>
                             <p>8:30am to 5:30pm</p>

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import pic from './assets/background-img1.jpg'
 import './Calendar.css'
 
-const Calendar = () => {
+const Calendar = ({language}) => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
@@ -16,7 +16,7 @@ const Calendar = () => {
 
   return (
     <section id="calendar">
-      <h1 className="calendar-title">Schedule your booking</h1>
+      <h1 className="calendar-title">{language === 'EN' ? "Schedule your booking" : "Plan uw afspraak"}</h1>
       <div className="calendar-container">
         <img className="barbershop-img" src={pic} alt="image of barbershop" />
         <div

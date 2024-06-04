@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 
-function Toggle() {
-    const [language, setLanguage] = useState('EN');
-    const [languageOption, setlanguageOption] = useState('NL');
+function Toggle({language, setLanguage}) {
+    const [languageOption, setlanguageOption] = useState(language === 'EN' ? 'NL' : 'EN');
 
     function toggleLanguage() {
         if (language === 'EN') {
