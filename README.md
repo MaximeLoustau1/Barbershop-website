@@ -1,6 +1,6 @@
 # Mock Website for a local barbershop
 
-##Built with:
+**Built with:**
 
 - React.js
 - CSS
