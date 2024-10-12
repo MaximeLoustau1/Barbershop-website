@@ -8,7 +8,7 @@ function Footer() {
 	return (
 		<section>
 			<div className="footer">
-				<p>&copy; {currentYear} Made by TNM Consulting</p>
+				<p>&copy; {currentYear} Made by Maxime Loustau-Lalanne</p>
 			</div>
 		</section>
 	);
